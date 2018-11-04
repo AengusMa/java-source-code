@@ -15,13 +15,11 @@ public class ToArrayTest {
     list.add("aaaaa");
     list.add("bbbbb");
     list.add("ccccc");
-    /**
-     * String[] tt = (String[]) list.toArray();
-     * 这样是错的,因为list.toArray()的返回值为Object[]不能转为String[]
-     */
+//      String[] tt = (String[]) list.toArray();
+//      这样是错的,因为list.toArray()的返回值为Object[]不能转为String[]
     String[] a = new String[ARRAY_SIZE];
     for (int i = 0; i < ARRAY_SIZE; i++) {
-      a[i] ="原始"+i;
+      a[i] = "原始" + i;
     }
     String[] b = (String[]) list.toArray(a);
 
